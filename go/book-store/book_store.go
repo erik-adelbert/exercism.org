@@ -21,7 +21,7 @@ var discounts = []int{
 // Cost calculates the total cost of purchasing the given books,
 // considering discounts.
 func Cost(books []int) int {
-	basePrice := len(books) * bookPrice
+	listPrice := len(books) * bookPrice
 
 	// count the number of sets of different sizes:
 	// with i <=nbook, bookSets[i] is the count of sets of size i
@@ -46,7 +46,7 @@ func Cost(books []int) int {
 	}
 
 	// apply discount and return total price
-	return basePrice - discount
+	return listPrice - discount
 }
 
 // setRemove removes the largest set from the input slice and

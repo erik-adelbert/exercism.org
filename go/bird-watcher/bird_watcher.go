@@ -15,7 +15,6 @@ func TotalBirdCount(birdsPerDay []int) int {
 func BirdsInWeek(birdsPerDay []int, week int) int {
 	lo, hi := 7*(week-1), 7*week
 	return TotalBirdCount(birdsPerDay[lo:hi])
-
 }
 
 // FixBirdCountLog returns the bird counts after correcting
